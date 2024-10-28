@@ -29,7 +29,8 @@
 		Price decimal(18,2),
 		DateCreated datetime2(7))
   
- ### Head over to dotnetAPI/appsettings.json file where you will see the Connection String settings. Make sure of filling the Server name and Database name where indicated
-	"ConnectionStrings": {"DefaultConnection": "Server=SERVERNAME;Database=DATABASENAME;Trusted_Connection=True;TrustServerCertificate=true;"}
+ ### Head over to dotnetAPI/appsettings.json file where you will see the Connection String settings. Make sure of filling the Server name and Database name where indicated in the first line
+	"ConnectionStrings": {"DefaultConnection": "Server=SERVERNAME;Database=DATABASENAME;
+ 	Trusted_Connection=True;TrustServerCertificate=true;"}
  
 

@@ -41,7 +41,7 @@ Make sure to fill the Server name and Database name where indicated.
  
 	"ConnectionStrings": {"DefaultConnection": "Server=SERVERNAME;Database=DATABASENAME;
  	Trusted_Connection=True;TrustServerCertificate=true;"}
-### Database Connection
+### Run the program
 To run the program, access the terminal in Visual Studio and type the following.
 This will run it using HTTPS. You can also change it to HTTP.
 

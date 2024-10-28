@@ -12,7 +12,7 @@
     		- Swashbuckle.AspNetCore
 	- Database:
 		- SQL Server
-    		- SQL Server Management Studio 20
+    	- SQL Server Management Studio 20
 	- Ferramenta para testar a API:
 		- Swagger	
   

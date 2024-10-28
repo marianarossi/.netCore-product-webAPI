@@ -9,20 +9,20 @@ It is developed following the ORM model.
 ## Software
 
 	- IDE:
-		- Visual Studio 2022
+		Visual Studio 2022
   
 	- Packages:
-    	- System.Data.SqlClient
-		- AutoMapper
-    	- Dapper
-    	- Swashbuckle.AspNetCore
+    	System.Data.SqlClient
+		AutoMapper
+    	Dapper
+    	Swashbuckle.AspNetCore
       
 	- Database:
-		- SQL Server
-    	- SQL Server Management Studio 20
+		SQL Server
+    	SQL Server Management Studio 20
      
 	- API testing tool:
-		- Swagger	
+		Swagger	
   
 ## Tutorial
 ### Database Connection
@@ -41,3 +41,14 @@ Make sure to fill the Server name and Database name where indicated.
  
 	"ConnectionStrings": {"DefaultConnection": "Server=SERVERNAME;Database=DATABASENAME;
  	Trusted_Connection=True;TrustServerCertificate=true;"}
+### Database Connection
+To run the program, access the terminal in Visual Studio and type the following.
+This will run it using HTTPS. You can also change it to HTTP.
+
+	dotnet run --launch-profile https
+  
+Open Swagger on the browser:
+
+	https://localhost:7211 for HTTPS
+ 	https://localhost:5251 for HTTP
+That should open the Swagger UI to test out the requests.

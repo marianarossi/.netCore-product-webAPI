@@ -1,5 +1,10 @@
-# .netCore web API project
-.netCore version: .net 8
+# dot net Core web API project
+Version: dot net 8. 
+
+This API is able to create, find, update and delete products. 
+
+It is developed following the ORM model.
+
 
 ## Software
 
@@ -16,7 +21,7 @@
 		- SQL Server
     	- SQL Server Management Studio 20
      
-	- Ferramenta para testar a API:
+	- API testing tool:
 		- Swagger	
   
 ## Tutorial

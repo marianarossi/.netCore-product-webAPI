@@ -20,7 +20,8 @@
 		- Swagger	
   
 ## Tutorial
-### Create a Database in SSMS and execute the following Query
+### Database Connection
+Create a Database in SSMS and execute the following Query:
 
 	 CREATE TABLE Products(
 		Id int IDENTITY(1, 1),
@@ -29,8 +30,9 @@
 		Price decimal(18,2),
 		DateCreated datetime2(7))
   
- ### Head over to dotnetAPI/appsettings.json file where you will see the Connection String settings. Make sure of filling the Server name and Database name where indicated in the first line
+Head over to dotnetAPI/appsettings.json file. 
+Find the Connection String settings. 
+Make sure to fill the Server name and Database name where indicated.
+ 
 	"ConnectionStrings": {"DefaultConnection": "Server=SERVERNAME;Database=DATABASENAME;
  	Trusted_Connection=True;TrustServerCertificate=true;"}
- 
-

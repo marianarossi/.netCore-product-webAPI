@@ -43,12 +43,11 @@ Make sure to fill the Server name and Database name where indicated.
  	Trusted_Connection=True;TrustServerCertificate=true;"}
 ### Run the program
 To run the program, access the terminal in Visual Studio and type the following.
-This will run it using HTTPS. You can also change it to HTTP.
+This will run it using HTTP.
 
-	dotnet run --launch-profile https
+	dotnet run --launch-profile http
   
 Open Swagger on the browser:
 
-	https://localhost:7211 for HTTPS
  	https://localhost:5251 for HTTP
 That should open the Swagger UI to test out the requests.

@@ -18,16 +18,18 @@ builder.Services.AddControllers()
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 //});
 
-builder.Services.AddCors(options => options.AddPolicy(name: "productsOrigin",
-    policy =>
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("productsOrigin", builder =>
     {
-        policy.WithOrigins("http>//localhost:4200").AllowAnyMethod().AllowAnyHeader();
-    }));
+        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 builder.Services.AddScoped<IProductService, ProductService>(); //connection between Interface and Implementation
 builder.Services.AddAutoMapper(typeof(Program));
 

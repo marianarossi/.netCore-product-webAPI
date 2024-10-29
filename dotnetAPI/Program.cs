@@ -43,7 +43,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("productsOrigin");
-app.UseHttpsRedirection(); //http to https
+//app.UseHttpsRedirection(); //http to https
 
 app.UseAuthorization();
 

@@ -42,7 +42,7 @@ Make sure to fill the Server name and Database name where indicated.
 	"ConnectionStrings": {"DefaultConnection": "Server=SERVERNAME;Database=DATABASENAME;
  	Trusted_Connection=True;TrustServerCertificate=true;"}
 ### Run the program
-To run the program, access the terminal in Visual Studio and type the following.
+To run the program, access the terminal and type the following.
 This will run it using HTTP.
 
 	dotnet run --launch-profile http
